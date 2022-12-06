@@ -1,0 +1,39 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+.alert-box {
+  &-card {
+    margin-bottom: 5px;
+    border-bottom: 7px solid #d92736;
+    &-content {
+      padding: 10px !important;
+      &-header {
+        display: flex;
+        @media (min-width: 469px) {
+          align-items: center;
+        }
+        &-icon {
+          margin-right: 5px;
+          @media (max-width: 767px) {
+            font-size: 20px !important;
+          }
+          @media (max-width: 340px) {
+            font-size: 15px !important;
+          }
+        }
+        &-title {
+          text-align: left;
+          font-family: $theme-font;
+          font-size: 15px;
+          color: #1a1a1a;
+          font-weight: 500;
+          margin-left: 12px;
+          @media (max-width: 767px) {
+            font-size: 14px !important;
+          }
+          @media (max-width: 340px) {
+            font-size: 10px !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@import "./../../../../styles/commonStyle/commonStyle.scss";
+
+.snacks-footer-wrapper {
+  position: relative;
+  height: 0;
+  margin-top: 105px;
+  z-index: 1000;
+}
+
+.grid-wrapper {
+  max-width: 100%;
+  width: 35%;
+  padding: 0;
+  display: flex !important;
+  justify-content: flex-end;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  transition: all 1s;
+  @media (max-width: 967px) {
+    width: 100% !important;
+  }
+  @media (min-width: 968px) and (max-width: 1250px) {
+    width: 45% !important;
+  }
+  &.close {
+    height: 93px;
+    bottom: 25px;
+  }
+
+  &.open {
+    height: 300px;
+    bottom: 25px;
+  }
+
+  .grid-block {
+    background: transparent linear-gradient(0deg, #ff571c 0%, #a22222 100%) 0%
+      0% no-repeat padding-box;
+    width: 100%;
+    padding: 16px 16px 20px 25px;
+    border-top-left-radius: 20px;
+
+    .footer-header {
+      justify-content: space-between;
+
+      .toggle-icon {
+        color: $white;
+        font-weight: 400;
+        cursor: pointer;
+
+        svg {
+          font-size: 55px;
+          margin-top: -10px;
+        }
+      }
+    }
+  }
+
+  .links-block {
+    column-count: 2;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 5px 0 20px 9px;
+    @media (max-width: $mobile-max-width) {
+      padding: 5px 0 0px 9px !important;
+    }
+
+    li {
+      a {
+        color: $white-fc;
+        font-size: $font14;
+        letter-spacing: 0.4px;
+        line-height: 30px;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        text-transform: uppercase;
+
+        @media (max-width: $mobile-max-width) {
+          font-size: 0.875em;
+          
+        }
+
+        &:hover {
+          text-decoration: underline;
+          text-underline-position: under;
+        }
+      }
+    }
+  }
+
+  .social-links {
+    display: inline-flex;
+    padding: 0;
+
+    li {
+      padding: 0 18px 0 0;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      @media (min-width: 401px) and (max-width: $mobile-max-width) {
+        padding-right: 10px;
+      }
+      @media (max-width: 400px) {
+        padding-right: 0px;
+      }
+
+      img {
+        width: 45px;
+      }
+    }
+  }
+}

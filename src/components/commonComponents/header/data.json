@@ -1,0 +1,549 @@
+{
+  "success": true,
+  "message": "",
+  "data": [
+    {
+      "categoryId": "Brands",
+      "title": "Brands",
+      "menuSeq": 0,
+      "showSearchBox": false,
+      "parentCategory": [
+        {
+          "title": "Featured Brands",
+          "subCategories": [
+            {
+              "value": "PASTA RONI",
+              "displayName": "PASTA RONI",
+              "image": "https://share.snacks.com/images/category/sub-categories/pasta roni.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/pasta roni-selected.png"
+            },
+            {
+              "value": "BARE",
+              "displayName": "BARE",
+              "image": "https://share.snacks.com/images/category/sub-categories/bare.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/bare-selected.png"
+            },
+
+            {
+              "value": "SPITZ",
+              "displayName": "SPITZ",
+              "image": "https://share.snacks.com/images/category/sub-categories/spitz.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/spitz-selected.png"
+            },
+            {
+              "value": "STACY'S",
+              "displayName": "STACY'S",
+              "image": "https://share.snacks.com/images/category/sub-categories/stacys.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/stacys-selected.png"
+            },
+            {
+              "value": "MISS VICKIE'S",
+              "displayName": "MISS VICKIE'S",
+              "image": "https://share.snacks.com/images/category/sub-categories/miss vickies.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/miss vickies-selected.png"
+            },
+
+            {
+              "value": "GRANDMA'S",
+              "displayName": "GRANDMA'S",
+              "image": "https://share.snacks.com/images/category/sub-categories/grandmas.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/grandmas-selected.png"
+            },
+
+            {
+              "value": "Doritos",
+              "displayName": "Doritos",
+              "image": "https://share.snacks.com/images/category/sub-categories/doritos.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/doritos-selected.png"
+            },
+            {
+              "value": "SIMPLY",
+              "displayName": "SIMPLY",
+              "image": "https://share.snacks.com/images/category/sub-categories/simply.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/simply-selected.png"
+            },
+            {
+              "value": "EL ISLENO",
+              "displayName": "EL ISLENO",
+              "image": "https://share.snacks.com/images/category/sub-categories/isleno.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/isleno-selected.png"
+            },
+
+            {
+              "value": "BAKEN-ETS",
+              "displayName": "BAKEN-ETS",
+              "image": "https://share.snacks.com/images/category/sub-categories/bakenets.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/bakenets-selected.png"
+            },
+            {
+              "value": "SABRITONES",
+              "displayName": "SABRITONES",
+              "image": "https://share.snacks.com/images/category/sub-categories/sabritones.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/sabritones-selected.png"
+            },
+            {
+              "value": "MUNCHOS",
+              "displayName": "MUNCHOS",
+              "image": "https://share.snacks.com/images/category/sub-categories/munchos.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/munchos-selected.png"
+            },
+            {
+              "value": "PASTA RONI",
+              "displayName": "PASTA RONI",
+              "image": "https://share.snacks.com/images/category/sub-categories/pasta roni.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/pasta roni-selected.png"
+            },
+            {
+              "value": "BARE",
+              "displayName": "BARE",
+              "image": "https://share.snacks.com/images/category/sub-categories/bare.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/bare-selected.png"
+            },
+
+            {
+              "value": "SPITZ",
+              "displayName": "SPITZ",
+              "image": "https://share.snacks.com/images/category/sub-categories/spitz.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/spitz-selected.png"
+            },
+            {
+              "value": "STACY'S",
+              "displayName": "STACY'S",
+              "image": "https://share.snacks.com/images/category/sub-categories/stacys.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/stacys-selected.png"
+            },
+            {
+              "value": "MISS VICKIE'S",
+              "displayName": "MISS VICKIE'S",
+              "image": "https://share.snacks.com/images/category/sub-categories/miss vickies.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/miss vickies-selected.png"
+            },
+
+            {
+              "value": "GRANDMA'S",
+              "displayName": "GRANDMA'S",
+              "image": "https://share.snacks.com/images/category/sub-categories/grandmas.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/grandmas-selected.png"
+            },
+
+            {
+              "value": "Doritos",
+              "displayName": "Doritos",
+              "image": "https://share.snacks.com/images/category/sub-categories/doritos.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/doritos-selected.png"
+            },
+            {
+              "value": "SIMPLY",
+              "displayName": "SIMPLY",
+              "image": "https://share.snacks.com/images/category/sub-categories/simply.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/simply-selected.png"
+            },
+            {
+              "value": "EL ISLENO",
+              "displayName": "EL ISLENO",
+              "image": "https://share.snacks.com/images/category/sub-categories/isleno.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/isleno-selected.png"
+            },
+
+            {
+              "value": "BAKEN-ETS",
+              "displayName": "BAKEN-ETS",
+              "image": "https://share.snacks.com/images/category/sub-categories/bakenets.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/bakenets-selected.png"
+            },
+            {
+              "value": "SABRITONES",
+              "displayName": "SABRITONES",
+              "image": "https://share.snacks.com/images/category/sub-categories/sabritones.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/sabritones-selected.png"
+            },
+            {
+              "value": "MUNCHOS",
+              "displayName": "MUNCHOS",
+              "image": "https://share.snacks.com/images/category/sub-categories/munchos.png",
+              "subCategoryHoverImage": "https://share.snacks.com/images/category/sub-categories/munchos-selected.png"
+            }
+          ]
+        }
+      ],
+
+      "promotion": [],
+      "shopAll": {
+        "title": "Shop All Brands",
+        "link": "https://page-link"
+      }
+    },
+    {
+      "categoryId": "Snack Type",
+      "title": "Snack Type",
+      "menuSeq": 1,
+      "showSearchBox": false,
+      "parentCategory": [
+        {
+          "title": "Shop Savory Snacks",
+          "subCategories": [
+            {
+              "value": "Rice & Pasta",
+              "displayName": "Rice & Pasta",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Corn Chips",
+              "displayName": "Corn Chips",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Popcorn Chips",
+              "displayName": "Popcorn Chips",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Gum",
+              "displayName": "Gum",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Popcorn",
+              "displayName": "Popcorn",
+              "image": "",
+              "subCategoryHoverImage": ""
+            }
+          ]
+        },
+        {
+          "title": "Shop Sweet Snacks",
+          "subCategories": [
+            {
+              "value": "Cookies & Crackers",
+              "displayName": "Cookies & Crackers",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Fruit & Veggie Chips",
+              "displayName": "Fruit & Veggie Chips",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Pita Chips",
+              "displayName": "Pita Chips",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Meat Snacks",
+              "displayName": "Meat Snacks",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Cheese Puffs",
+              "displayName": "Cheese Puffs",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Cereal",
+              "displayName": "Cereal",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Multigrain Snacks",
+              "displayName": "Multigrain Snacks",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Potato Chips",
+              "displayName": "Potato Chips",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Nuts & Seeds",
+              "displayName": "Nuts & Seeds",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Tortilla Chips",
+              "displayName": "Tortilla Chips",
+              "image": "",
+              "subCategoryHoverImage": ""
+            }
+          ]
+        },
+        {
+          "title": "Shop Nuts & Jerky Snacks",
+          "subCategories": [
+            {
+              "value": "Other",
+              "displayName": "Other",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Pretzels",
+              "displayName": "Pretzels",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Dips",
+              "displayName": "Dips",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Pork Rinds",
+              "displayName": "Pork Rinds",
+              "image": "",
+              "subCategoryHoverImage": ""
+            }
+          ]
+        },
+        {
+          "title": "Shop Nuts & Cheeese Snacks",
+          "subCategories": [
+            {
+              "value": "Other",
+              "displayName": "Other",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Pretzels",
+              "displayName": "Pretzels",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Dips",
+              "displayName": "Dips",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Pork Rinds",
+              "displayName": "Pork Rinds",
+              "image": "",
+              "subCategoryHoverImage": ""
+            }
+          ]
+        }
+      ],
+      "promotion": [],
+      "shopAll": {
+        "title": "Shop All Snack Types",
+        "link": "https://page-link"
+      }
+    },
+    {
+      "categoryId": "Flavors",
+      "title": "Flavors",
+      "menuSeq": 2,
+      "showSearchBox": false,
+
+      "parentCategory": [
+        {
+          "title": "TOP FLAVORS",
+          "subCategories": [
+            {
+              "value": "Chocolate",
+              "displayName": "Chocolate",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Peanut",
+              "displayName": "Peanut",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Plain",
+              "displayName": "Plain",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Barbecue",
+              "displayName": "Barbecue",
+              "image": "",
+              "subCategoryHoverImage": ""
+            }
+          ]
+        }
+      ],
+
+      "promotion": [
+        {
+          "image": "www/images/filter-card-half.png",
+          "title": "LeBron x Ruffles",
+          "description": "test description",
+          "buttonName": "SHOP NOW",
+          "buttonLlink": "test link",
+          "backgroundColor": "bg color"
+        },
+        {
+          "image": "www/images/filter-card-half.png",
+          "title": "LeBron x Ruffles",
+          "description": "test description",
+          "buttonName": "SHOP NOW",
+          "buttonLlink": "test link",
+          "backgroundColor": "bg color"
+        }
+      ],
+      "shopAll": {
+        "title": "Shop All Flavors",
+        "link": "https://page-link"
+      }
+    },
+
+    {
+      "categoryId": "Featured",
+      "title": "Featured",
+      "menuSeq": 3,
+      "showSearchBox": false,
+      "parentCategory": [
+        {
+          "title": "MORE WAYS TO SHOP",
+          "subCategories": [
+            {
+              "value": "On The Go",
+              "displayName": "On The Go",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Entertaining",
+              "displayName": "Entertaining",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Gaming",
+              "displayName": "Gaming",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Movie Night",
+              "displayName": "Movie Night",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Work/Study Break",
+              "displayName": "Work/Study Break",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "lightysalted",
+              "displayName": "lightysalted",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "On The Go",
+              "displayName": "On The Go",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Entertaining",
+              "displayName": "Entertaining",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Gaming",
+              "displayName": "Gaming",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Movie Night",
+              "displayName": "Movie Night",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Work/Study Break",
+              "displayName": "Work/Study Break",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "lightysalted",
+              "displayName": "lightysalted",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "On The Go",
+              "displayName": "On The Go",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Entertaining",
+              "displayName": "Entertaining",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Gaming",
+              "displayName": "Gaming",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Movie Night",
+              "displayName": "Movie Night",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "Work/Study Break",
+              "displayName": "Work/Study Break",
+              "image": "",
+              "subCategoryHoverImage": ""
+            },
+            {
+              "value": "lightysalted",
+              "displayName": "lightysalted",
+              "image": "",
+              "subCategoryHoverImage": ""
+            }
+          ]
+        }
+      ],
+      "promotion": [],
+      "shopAll": {
+        "title": "",
+        "link": ""
+      }
+    },
+
+    {
+      "categoryId": "My Variety Pack",
+      "title": "My Variety Pack",
+      "menuSeq": 3,
+      "showSearchBox": false,
+      "parentCategory": [],
+      "promotion": [],
+      "shopAll": {
+        "title": "",
+        "link": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+.header {
+  .search {
+    &-list {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+    &-mobile {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  .nav-search {
+    width: 290px;
+    border-radius: 0px;
+    @media (max-width: 1200px) {
+      width: 226px;
+    }
+    @media (max-width: 991px) {
+      width: 200px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    .Mui-focused {
+      fieldset {
+        border-color: $theme-blue;
+      }
+    }
+    > div {
+      border-radius: 0px;
+      padding-right: 0;
+    }
+    &-formgroup {
+      justify-content: flex-start;
+    }
+    .form-label + div {
+      padding-right: 0;
+    }
+    input {
+      font-size: $font14;
+      @media (max-width: 1024px) {
+        font-size: $font16;
+        padding-top: 9px;
+        padding-bottom: 9px;
+      }
+      &::placeholder {
+        font-size: 14px;
+        color: #595959;
+        opacity: 1;
+        font-weight: 400;
+        @media (max-width: 1300px) {
+          font-size: 12px;
+        }
+      }
+      &::-webkit-search-decoration,
+      &::-webkit-search-cancel-button,
+      &::-webkit-search-results-button,
+      &::-webkit-search-results-decoration {
+        display: none;
+      }
+    }
+    .btn-mui {
+      border-radius: 0px;
+      background-color: $white;
+      min-width: 40px;
+      padding: 0px;
+      border: none;
+      height: 36px;
+      img {
+        width: 22px;
+      }
+    }
+  }
+}

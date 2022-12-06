@@ -1,0 +1,83 @@
+@import "../../../../styles/commonStyle/commonStyle.scss";
+.promotionTilesContainer {
+  margin: 80px 0px;
+  padding: 0px 18px;
+  display: flex;
+  justify-content: center;
+  .promotionTiles {
+    max-width: 1440px;
+    .tile {
+      padding: 0px 15px;
+      overflow: hidden;
+      &-content {
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        &-top {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 30px 30px 37px 30px;
+          overflow: hidden;
+          span {
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 36px;
+            color: #fff;
+            text-align: center;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #fff;
+            margin: 10px 0px 20px 0px;
+            text-align: center;
+          }
+          a {
+            padding: 14px 18px;
+            background-color: $black;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 900;
+            min-width: 170px;
+            text-decoration: none;
+            text-align: center;
+
+            svg {
+              vertical-align: middle;
+              margin-left: 5px;
+            }
+
+            @media (max-width: 959px) {
+              min-width: 140px;
+            }
+          }
+        }
+        img {
+          object-fit: contain;
+        }
+      }
+      .reverse {
+        flex-direction: column-reverse;
+      }
+
+      @media (max-width: 959px) {
+        margin-bottom: 20px;
+        max-width: 495px;
+      }
+
+      @media (max-width: 767px) {
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 959px) {
+      justify-content: center;
+    }
+  }
+}

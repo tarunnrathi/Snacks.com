@@ -1,0 +1,314 @@
+@import "../../../styles/commonStyle/commonStyle.scss";
+.modal {
+  &-paper {
+    overflow-y: initial !important;
+  }
+  &-static {
+    @media (max-width: 767px) {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      max-width: calc(100% - 30px) !important;
+    }
+    & > div {
+      padding: 0 !important;
+    }
+    .container-root {
+      padding: 0 !important;
+    }
+    .common-box {
+      &-full {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        .common-box-header {
+          box-shadow: none;
+          border-radius: 2px 2px 0 0;
+          padding: 20px 25px 15px 25px;
+          @media (max-width: 991px) {
+            padding: 20px 20px 15px 20px;
+            margin-bottom: 15px;
+          }
+        }
+        .common-box-body {
+          box-shadow: none;
+          @media (max-width: 767px) {
+            padding-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  &-notify {
+    max-width: none;
+    border-radius: 0 !important;
+    width: 975px;
+    background: url("/www/images/popup-bg-mp.jpg") no-repeat;
+    padding: 40px 0 36px 0;
+    background-size: 110%;
+    background-position: 0 0;
+    @media (max-width: $mobile-max-width) {
+      margin: 16px !important;
+      max-width: calc(100% - 32px) !important;
+      background-size: 200% !important;
+      background-position: cover;
+      padding: 75px 0 50px 0;
+    }
+    @media (max-width: 767px) {
+      padding: 40px 16px 30px 16px;
+      background-size: cover !important;
+      background-position: center bottom;
+    }
+    &.modal-zip {
+      @media (max-width: $mobile-max-width) {
+        background-position: -700px -50px;
+      }
+      @media (max-width: 767px) {
+        background-position: -300px 0px;
+      }
+    }
+    & > div {
+      padding: 0 !important;
+    }
+    &.notify-box {
+      & > div {
+        padding: 0 10px;
+        overflow: hidden;
+        @media (max-width: 767px) {
+          padding: 0 10px !important;
+        }
+      }
+    }
+  }
+}
+.notify-form {
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 0 82px;
+    min-height: 420px;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+  &-left {
+    flex: 1;
+  }
+  &-right {
+    width: 530px;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  &-inner {
+    width: calc(100% - 70px);
+    margin-left: 35px;
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  &-success {
+    .note-text {
+      margin-left: 10px;
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-left: 0;
+      }
+      &:first-of-type {
+        font-size: 26px;
+        margin-bottom: 0;
+        @media (max-width: 767px) {
+          font-size: 22px;
+        }
+      }
+      & + .note-text {
+        margin-top: 0;
+        margin-bottom: 100px;
+      }
+    }
+    .button-group {
+      width: calc(100% - 70px);
+      margin-left: 35px;
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-left: 0;
+      }
+      .btn-primary,
+      .btn-primary.Mui-disabled {
+        color: red;
+        border-color: red;
+        background-color: $white;
+        &:hover {
+          color: red;
+        }
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .notify-checkbox {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    &-wrapper {
+      margin-top: 8px;
+      padding-left: 2px;
+    }
+    a {
+      color: $black;
+      font-size: 14px;
+      margin-left: 5px;
+      font-weight: 500;
+      @media (max-width: 767px) {
+        font-size: 12px;
+        margin-left: 30px;
+      }
+    }
+    label {
+      margin-right: 0;
+    }
+    span {
+      font-family: $theme-font;
+      font-size: 14px;
+      color: $black;
+      @media (max-width: 767px) {
+        font-size: 12px;
+      }
+      &:first-child {
+        color: rgba(0, 0, 0, 0.85);
+        position: relative;
+        width: 40px;
+        @media (max-width: 767px) {
+          padding-top: 2px;
+          padding-bottom: 2px;
+        }
+        &:before {
+          content: "";
+          height: 20px;
+          width: 20px;
+          background-color: $white;
+          border: 1px solid #999999;
+          border-radius: 4px;
+        }
+        &.Mui-checked {
+          &:after {
+            content: "";
+            display: block;
+            width: 5px;
+            height: 10px;
+            border: solid #000;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 17px;
+            top: 13px;
+            @media (max-width: 767px) {
+              top: 8px;
+            }
+          }
+        }
+        span {
+          opacity: 0;
+          width: 0;
+        }
+      }
+    }
+  }
+  .note-text {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 61px;
+    @media (max-width: 1024px) {
+      margin-top: 35px;
+    }
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+  }
+  .custom-form img {
+    max-height: 88px;
+    @media (max-width: 991px) {
+      margin-bottom: 225px;
+    }
+    @media (max-width: 767px) {
+      max-width: 175px;
+      margin-bottom: 115px;
+    }
+  }
+  .form-card {
+    border: none;
+    padding-bottom: 0;
+    padding-top: 30px;
+    @media (max-width: 768px) {
+      padding-top: 40px;
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .form-card-container {
+    margin: -10px !important;
+    width: calc(100% + 20px) !important;
+    @media (max-width: 768px) {
+      margin: -12px !important;
+      width: calc(100% + 24px) !important;
+    }
+    & > div {
+      padding: 10px !important;
+      @media (max-width: 768px) {
+        padding: 12px !important;
+      }
+    }
+  }
+}
+.mp-box {
+  position: relative;
+  margin-top: 70px;
+  @media (max-width: 991px) {
+    margin-top: 0;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media (max-width: 767px) {
+    top: 84px;
+  }
+  &:after {
+    content: "";
+    background-image: url("/www/images/mp-shadow.png");
+    background-size: cover;
+    position: absolute;
+    left: -35px;
+    bottom: -20px;
+    height: 90px;
+    width: 100%;
+    z-index: 1;
+    @media (max-width: 991px) {
+      left: 0;
+      height: 50px;
+    }
+    @media (max-width: 767px) {
+      display: none;
+      // left: 0;
+      // height: 30px;
+    }
+  }
+  img {
+    max-width: 305px;
+    position: relative;
+    z-index: 2;
+    @media (max-width: 991px) {
+      max-width: 200px;
+    }
+    @media (max-width: 767px) {
+      max-width: 120px;
+    }
+  }
+}

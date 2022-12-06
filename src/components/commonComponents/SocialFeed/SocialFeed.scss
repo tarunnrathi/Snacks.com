@@ -1,0 +1,80 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+
+$border: 1px solid rgba(0, 0, 0, 0.2);
+
+.social-header {
+  margin-bottom: 31px;
+  margin-top: 80px;
+  
+  h2 {
+    display: inline;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 900;
+    font-family: $theme-font !important;
+  }
+
+  a {
+    float: right;
+    background-color: $black;
+    color: $white;
+    padding: 14px 34px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
+    margin-top: 50px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    a {
+      font-size: 16px;
+      line-height: 16px;
+      padding: 15px 21px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    h2 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    a {
+      font-size: 14px;
+      line-height: 15px;
+      padding: 12px 21px;
+    }
+  }
+}
+
+.img-wrapper {
+  width: 345px;
+  height: 345px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 550px) {
+    width: 175px;
+    height: 175px;
+  }
+
+  @media (max-width: 380px) {
+    width: 145px;
+    height: 145px;
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "categoryId": "Brands",
+      "title": "Brands",
+      "menuSeq": 0,
+      "showSearchBox": false,
+      "parentCategory": [],
+
+      "promotion": [],
+      "shopAll": {
+        "title": "Shop All Brands",
+        "link": "productlist"
+      }
+    },
+    {
+      "categoryId": "Snack Type",
+      "title": "Snack Type",
+      "menuSeq": 1,
+      "showSearchBox": false,
+      "parentCategory": [],
+      "promotion": [],
+      "shopAll": {
+        "title": "Shop All Snack Types",
+        "link": "productlist"
+      }
+    },
+    {
+      "categoryId": "Flavors",
+      "title": "Flavors",
+      "menuSeq": 2,
+      "showSearchBox": false,
+
+      "parentCategory": [],
+
+      "promotion": [],
+      "shopAll": {
+        "title": "Shop All Flavors",
+        "link": "productlist"
+      }
+    },
+
+    {
+      "categoryId": "Featured",
+      "title": "Featured",
+      "menuSeq": 3,
+      "showSearchBox": false,
+      "parentCategory": [],
+      "promotion": [],
+      "shopAll": {
+        "title": "",
+        "link": "productlist"
+      }
+    },
+
+    {
+      "categoryId": "My Variety Pack",
+      "title": "My Variety Pack",
+      "menuSeq": 3,
+      "showSearchBox": false,
+      "parentCategory": [],
+      "promotion": [],
+      "shopAll": {
+        "title": "",
+        "link": "productlist"
+      }
+    }
+  ]
+}

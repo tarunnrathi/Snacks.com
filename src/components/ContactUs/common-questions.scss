@@ -1,0 +1,74 @@
+@import "../../styles/commonStyle/commonStyle.scss";
+div.question {
+  &-accordion {
+    box-shadow: none;
+    border-bottom: 1px solid #e3e3e3;
+    &.Mui-expanded {
+      margin: 0;
+    }
+    &:before {
+      display: none;
+    }
+    &-header {
+      padding-left: 8px;
+      padding-right: 50px;
+      color: $theme-blue;
+      position: relative;
+      &.Mui-focused {
+        background-color: transparent;
+      }
+      &.Mui-expanded {
+        min-height: 48px;
+      }
+      .expandIcon {
+        position: absolute;
+        top: -5px;
+        right: 14px;
+        svg {
+          height: 34px;
+          width: 34px;
+        }
+      }
+    }
+    &-content {
+      margin: 12px 0;
+      &.Mui-expanded {
+        margin: 12px 0;
+      }
+    }
+    &-body {
+      padding: 0 50px 16px 8px;
+      flex-flow: column;
+      @media (max-width: 991px) {
+        padding: 0 0 8px 8px;
+      }
+      p {
+        color: $black-light;
+        font-size: $font14;
+        margin: 0;
+        & + p {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+.helpful-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  .btn-link-wrapper {
+    margin-top: 0;
+    .btn-link {
+      font-size: $font16;
+    }
+  }
+  &-note {
+    color: $black-light;
+    font-size: $font16;
+    font-weight: 500;
+    margin-right: 20px;
+  }
+}

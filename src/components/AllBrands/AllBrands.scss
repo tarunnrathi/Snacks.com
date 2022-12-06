@@ -1,0 +1,74 @@
+@import "./../../../src/styles/commonStyle/commonStyle.scss";
+.all-brands {
+  &-container {
+    .myop-container {
+      margin-bottom: 80px;
+    }
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 80px 0;
+    @media (max-width: 991px) {
+      width: calc(100% + 33px);
+      margin: 0 0 0 -14px;
+    }
+    li {
+      width: 16.6666667%;
+      list-style: none;
+      border: 1px solid #DAD7CD;
+      margin: -1px 0 0 -1px;
+      @media (max-width: 1024px) {
+        width: 20%;
+      }
+      @media (max-width: 991px) {
+        width: 25%;
+      }
+      @media (max-width: 767px) {
+        width: 33.33%;
+      }
+      button {
+        font-size: 16px;
+        font-weight: 800;
+        text-transform: capitalize;
+        padding: 16px;
+        border-radius: 0;
+        line-height: 1;
+        width: 100%;
+        @media (max-width: 991px) {
+          padding: 12px;
+          font-size: 14px;
+        }
+        span {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  &-img {
+    height: 189px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1024px) {
+      height: 165px;
+    }
+    @media (max-width: 991px) {
+      height: 150px;
+    }
+    @media (max-width: 767px) {
+      height: 95px;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+  }
+  &-title {
+    margin-top: 10px;
+  }
+}

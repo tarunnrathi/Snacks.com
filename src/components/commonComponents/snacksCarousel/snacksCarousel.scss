@@ -1,0 +1,81 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+
+.carousel-single {
+  height: 100%;
+  margin: 0;
+  transition: all 0.35s ease-in-out;
+  position: relative;
+  transition-duration: 1000ms;
+  padding: 0;
+
+  &-wrapper {
+    height: 675px;
+    overflow: hidden;
+    @media (max-width: 1366px) {
+      height: 640px;
+    }
+    @media (max-width: 1024px) {
+      height: 490px;
+    }
+    @media (max-width: 991px) {
+      max-height: 360px;
+    }
+    @media (max-width: 767px) {
+      max-height: 100%;
+      height: auto;
+    }
+    &.right {
+      .last-slide {
+        transition-duration: 10ms;
+      }
+    }
+    &.left {
+      .slide-1 {
+        transition-duration: 10ms;
+      }
+    }
+    &.center {
+      .carousel-single {
+        display: flex;
+      }
+      .slide-1 {
+        transition-duration: 10ms;
+      }
+      li {
+        min-width: 100%;
+      }
+    }
+  }
+  li {
+    height: 675px;
+    position: relative;
+    list-style: none;
+    img.hero-background {
+      width: 100%;
+      height: auto;
+    }
+    @media (max-width: 1366px) {
+      height: 640px;
+    }
+    @media (max-width: 1024px) {
+      height: 490px;
+    }
+    @media (max-width: 991px) {
+      max-height: 360px;
+    }
+    @media (max-width: 767px) {
+      max-height: calc(100vh - 100px);
+      min-height: 400px;
+      height: auto;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

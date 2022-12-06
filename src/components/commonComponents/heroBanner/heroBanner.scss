@@ -1,0 +1,154 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+.home-box {
+  &-wrapper {
+    padding-top: 80px;
+    @media (max-width: 767px) {
+      padding-top: 50px;
+    }
+    .min-order {
+      text-align: center;
+      font-size: $font18;
+      font-weight: 400;
+      color: $black-light;
+      margin-bottom: 50px;
+      position: relative;
+      z-index: 2;
+      @media (max-width: 991px) {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (max-width: 767px) {
+        width: 260px;
+      }
+      & + .container-root {
+        @media (max-width: 599px) {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
+.user-title {
+  @include homeHeading($theme-blue);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+  position: relative;
+  z-index: 2;
+  @media (max-width: 767px) {
+    font-size: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  span {
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+}
+
+.auth-banner {
+  position: relative;
+  padding-top: 130px;
+  @media (max-width: 767px) {
+    padding-top: 0;
+  }
+  @media (max-width: 599px) {
+    height: 780px;
+    padding-top: 160px;
+  }
+  &:before {
+    content: "";
+    height: 1200px;
+    width: 100%;
+    position: absolute;
+    top: -255px;
+    left: 0;
+    background: url("/www/images/bg-blue1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 1800px) {
+      background-position-x: -40px;
+    }
+    @media (max-width: 1350px) {
+      background-position-x: -100px;
+    }
+    @media (max-width: 767px) {
+      background-image: url("/www/images/bg-blue.png");
+      height: 600px;
+      top: -40px;
+      background-size: 350%;
+      background-position: center bottom;
+    }
+    @media (max-width: 599px) {
+      background-image: url("/www/images/auth-home-mobile.png");
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: left center;
+    }
+  }
+  .home-row-container {
+    @media (max-width: 1350px) {
+      padding-left: 20px;
+    }
+    @media (max-width: 767px) {
+      padding-left: 0;
+    }
+  }
+  .previous-orders {
+    flex-grow: 0;
+    max-width: none;
+    @media (max-width: 1200px) {
+      max-width: 50%;
+      flex-basis: 50%;
+    }
+    @media (max-width: 767px) {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  }
+  .all-products {
+    max-width: 500px;
+    flex-basis: 500px;
+    padding-right: 50px !important;
+    @media (max-width: 1600px) {
+      max-width: 550px;
+      flex-basis: 550px;
+    }
+    @media (max-width: 1200px) {
+      max-width: 50%;
+      flex-basis: 50%;
+      padding-right: 10px !important;
+    }
+    @media (max-width: 767px) {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  }
+  .home-title {
+    font-size: $font45;
+    letter-spacing: 1px;
+    @media (max-width: 1200px) {
+      font-size: $font30;
+    }
+    @media (max-width: 767px) {
+      font-size: $font34;
+      line-height: 36px;
+    }
+    @media (max-width: 599px) {
+      padding-right: 40px;
+    }
+    @media (max-width: 359px) {
+      font-size: $font26;
+    }
+  }
+  .home-content {
+    @media (max-width: 360px) {
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "crumbs": [
+    {
+      "label": "Home",
+      "link": "/"
+    },
+    {
+      "label": "Savoury Snacks",
+      "link": "/productlist"
+    },
+    {
+      "label": "Chips"
+    }
+  ],
+  "productinfo": {
+    "id": "1129745",
+    "productId": "11398100",
+    "title": "Cheetos Crunchy Flamin’ Hot Cheese Flavored Snacks",
+    "rating": 5,
+    "review_count": 24,
+    "price": "2.40",
+    "currency": "$",
+    "showNotifyMe": false,
+    "size": "Big Bag (9.75oz)",
+    "assets": {
+        "Product_Image": "https://share.snacks.com/images/holidayshop/2021/Cheetos_Overalls/PGSHoliday_CheetosOveralls_560x560.png",
+        "Product_Back_Image": "https://i5.walmartimages.com/asr/dac221e4-18e8-48bf-a5ec-0332c1ca552e.44167b3737894293b704e8d972509701.jpeg",
+        "Ingredients_Image": "",
+        "Nutrition_Image": "",
+        "Smart_Label_Url": "",
+        "Size_Chart_Image": "",
+        "Other_Image": "",
+        "Product_Video": ""
+    },
+    "shortDescription": "Riding Cheesy",
+    "longDescription": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+    "flavorNotes": [
+      {
+          "icon": null,
+          "title": "Spicy"
+      }
+    ],
+    "productEnableFor": "Merchandise",
+    "groups": [
+        {
+            "id": "1129745",
+            "productId": "11398100",
+            "title": "AA Doritos Tortilla Chips Flamas 9.75 Oz",
+            "price": "2.40",
+            "size": "Big Bag (9.75oz)",
+            "productEnableFor": "Merchandise",
+            "availableQty": 100,
+            "outOfStock": false,
+            "preOrderText": "",
+            "productType": "clothing"
+        }
+    ],
+    "brand": {
+      "title": "Doritos",
+      "image": "/www/images/redesign/about-cheetos.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "buttonLabel": "SHOP THIS BRAND"
+    },
+    "recipe": {
+      "image": "/www/images/redesign/about-cheetos.png",
+      "title": "Blazing hot Mac n’ Cheese",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "buttonLabel": "SEE RECIPE",
+      "link": "/"
+    }
+  },
+  "about": {
+    "image": "/www/images/redesign/about-cheetos.png",
+    "heading": "About Cheetos",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "ctaLabel": "SHOP THIS BRAND",
+    "link": "/"
+  }
+}

@@ -1,0 +1,258 @@
+@import "./variables.scss";
+@mixin standardLink($color, $hover) {
+  color: $color;
+  text-transform: uppercase;
+  font-size: $font18;
+  line-height: $font26;
+  letter-spacing: 0.51px;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+}
+@mixin buttonStyle() {
+  min-width: 240px;
+  margin: 2px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: $font18;
+  line-height: $font26;
+  letter-spacing: 0.51px;
+  @media (max-width: 991px) {
+    font-size: $font16;
+    padding: 10px 15px;
+  }
+  @media (max-width: 767px) {
+    min-width: 140px;
+    width: 100%;
+  }
+}
+/*CHANGED*/
+@mixin standardLinkNew($bg, $hoverBg) {
+  background: $bg;
+  border: 1px solid $bg;
+  color: $white;
+  @include buttonStyle;
+  transition: all 0.5s ease;
+  &:hover {
+    background: $hoverBg;
+    color: $black;
+  }
+}
+@mixin standardLinkNewReverse($bg, $hoverBg) {
+  background: $bg;
+  border: 1px solid $hoverBg;
+  @include buttonStyle;
+  color: $hoverBg;
+  transition: all 0.5s ease;
+  &:hover {
+    background: $hoverBg;
+    color: $white;
+  }
+}
+
+@mixin standardButton($color, $bg, $hoverBg, $hoverColor) {
+  color: $color;
+  background-color: $bg;
+  font-size: $font18;
+  line-height: $font26;
+  letter-spacing: 0.51px;
+  padding: 6px 16px;
+  &:hover,
+  &:focus {
+    color: $hoverColor;
+    background-color: $hoverBg;
+  }
+}
+@mixin pageHeading() {
+  color: $theme-blue;
+  text-transform: uppercase;
+  font-size: $font42;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1px;
+  @media (max-width: 767px) {
+    font-size: $font24;
+  }
+}
+@mixin pageInnerHeading($color) {
+  color: $color;
+  text-transform: uppercase;
+  font-size: $font55;
+  line-height: 1;
+  letter-spacing: 1.57px;
+}
+@mixin popupHeading() {
+  color: $theme-blue;
+  text-transform: uppercase;
+  font-size: $font48;
+  line-height: 1;
+  letter-spacing: 1.49px;
+}
+@mixin homeHeading($c) {
+  color: $c;
+  text-transform: uppercase;
+  font-size: $font60;
+  line-height: 1;
+}
+@mixin pageContent($color) {
+  color: $color;
+  font-size: $font16;
+  line-height: $font22;
+  letter-spacing: 0.51px;
+}
+@mixin thankyouHeading($color) {
+  color: $color;
+  font-size: $font30;
+  line-height: 1;
+  letter-spacing: 0.51px;
+}
+@mixin formHeading($color) {
+  color: $color;
+  font-size: $font16;
+  line-height: 1;
+  letter-spacing: 1.16px;
+}
+@mixin verticalSeparator($color) {
+  background-color: $color;
+  margin: 0 10px;
+  width: 2px;
+  height: 25px;
+  display: block;
+}
+
+@mixin horizontalSeparator($color) {
+  background-color: $color;
+  width: 100%;
+  height: 2px;
+  display: block;
+}
+
+@mixin boxShadowContainer() {
+  box-shadow: 0px 2px 4px #00000033;
+  border-radius: 6px;
+  background-color: $white;
+}
+
+@mixin showdowGradient($heightP, $topP) {
+  position: absolute;
+  width: 100%;
+  height: $heightP;
+  left: 0;
+  top: $topP;
+  background: radial-gradient(
+    ellipse at 50% 33%,
+    rgba(0, 0, 0, 0.3),
+    rgba(97, 97, 97, 0) 40%
+  );
+}
+
+@mixin colorBox($c1, $c2, $c3, $c4) {
+  color: $c1;
+  border: 2px solid $c1;
+  background-color: #fff;
+  &.selected,
+  &.category-heading {
+    background: linear-gradient($c2, $c3);
+    color: $c4;
+  }
+}
+
+@mixin maxContainer() {
+  min-height: calc(100vh - 200px);
+}
+
+@mixin scrollbars(
+  $size,
+  $foreground-color,
+  $background-color: mix($foreground-color, $white, 50%)
+) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+// sticky head title
+@mixin stickyHead() {
+  position: fixed;
+  width: 1440px !important;
+  z-index: 5;
+  min-height: auto;
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  @media (max-width: 1440px) {
+    width: 100% !important;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  @media (max-width: 767px) {
+    padding: 25px 16px 20px 16px;
+  }
+  // @media (max-width: 420px) {
+  //   top: 65px;
+  // }
+}
+@mixin stickyTitle() {
+  color: $theme-blue;
+  text-transform: uppercase;
+  font-size: $font30;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.2px;
+  margin: 10px 0 0 0;
+  @media (max-width: 767px) {
+    font-size: $font24;
+    margin: 0;
+  }
+}
+
+@mixin holidayShopBg() {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  @media (max-width: 767px) {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: unset;
+    background-color: white;
+  }
+}
+@mixin dropShopTitle($color, $fontSize) {
+  color: $color;
+  font-size: $fontSize;
+}
+
+@mixin redBtn {
+  @include buttonStyle;
+
+  border: 2px solid $red-db;
+  background-color: $red-db;
+  color: $white;
+
+  &:hover {
+    background-color: $red-b8-hover;
+    border-color: $red-b8-hover;
+  }
+}

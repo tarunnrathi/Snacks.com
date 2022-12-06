@@ -1,0 +1,99 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+.zipcodebox {
+  display: flex;
+  align-items: center;
+  .shipto {
+    &-btn {
+      font-size: $font16;
+      text-transform: capitalize;
+      min-width: 140px !important;
+      border: none;
+      background-color: transparent !important;
+      color: $white;
+      min-width: unset !important;
+      padding: 0px !important;
+      margin-left: 11px;
+      text-decoration: underline;
+      @media (max-width: 959px) and (min-width: 767px) {
+        margin-right: 10px;
+      }
+      @media (max-width: 991px) {
+        min-width: auto !important;
+      }
+      &.open {
+        border-radius: none;
+      }
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+      &.Mui-disabled {
+        color: $white;
+      }
+    }
+    &-icon {
+      margin-top: 8px;
+      color: $white;
+    }
+    &-text {
+      font-weight: normal;
+      margin-right: 5px;
+      color: $white;
+    }
+    &-zip {
+      font-weight: normal;
+      color: $white;
+    }
+  }
+}
+
+#shipto {
+  .popover {
+    &-zip {
+      z-index: 1302 !important;
+      &-paper {
+        border-top: none;
+        border-radius: 0 !important;
+        width: 155px !important;
+        // top: 46px !important;
+        padding: 8px;
+        @media (max-width: 767px) {
+          border: 1px solid #c4c4c4;
+          border-radius: 10px !important;
+        }
+        div {
+          width: 100%;
+        }
+        .button-group {
+          margin-top: 6px !important;
+          display: flex;
+          justify-content: space-between;
+          .update-btn {
+            @include standardLinkNew($theme-blue, $white);
+          }
+          .cancel-btn {
+            @include standardLinkNewReverse($white, $theme-blue);
+          }
+          .small-btn {
+            min-width: auto;
+            font-size: 12px;
+            padding: 5px 7px;
+            text-transform: capitalize;
+            margin: 0;
+            width: calc(50% - 3px);
+          }
+          & + span {
+            display: none;
+          }
+        }
+        input {
+          border: 1px solid #ccc;
+          padding: 5px 8px;
+          font-size: $font15;
+          border-radius: 4px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

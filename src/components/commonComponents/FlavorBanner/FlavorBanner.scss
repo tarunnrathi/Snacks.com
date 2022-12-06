@@ -1,0 +1,86 @@
+@import "../../../styles/commonStyle/commonStyle.scss";
+
+$duration: 20s;
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  position: relative;
+  bottom: 0;
+  overflow: hidden;
+  height: auto;
+  margin: 0 auto;
+
+  .ticker {
+    display: inline-block;
+    height: 4rem;
+    height: auto;
+    line-height: inherit;
+    // padding-right: 100%;
+    box-sizing: content-box;
+    padding-left: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    justify-content: space-evenly;
+    // display: flex;
+    display: inline-block;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: $duration;
+    animation-duration: $duration;
+
+    &-item {
+      display: inline;
+      font-family: "work-sans", sans-serif !important;
+      color: #000 !important;
+      white-space: nowrap;
+      font: normal normal 900 2rem/2rem "work-sans";
+      text-transform: uppercase;
+      padding-right: 70px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .ticker-wrap {
+    .ticker {
+      &-item {
+        font-size: 24px;
+        line-height: 24px;
+        padding-right: 30px;
+      }
+    }
+  }
+}

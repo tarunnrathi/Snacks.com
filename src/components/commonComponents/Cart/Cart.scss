@@ -1,0 +1,414 @@
+@import "../../../styles/commonStyle/commonStyle.scss";
+
+.cart-wrapper {
+  background: #fff;
+  .cart-heading {
+    text-align: center;
+    text-transform: unset;
+    font-family: "work-sans", sans-serif !important;
+    font-size: 80px;
+    font-weight: 900;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+  .cart-container {
+    padding: 30px 150px 0 150px;
+    //border: 2px solid $white;
+    .letf-grid {
+      .card {
+        border: none;
+        align-items: center;
+        margin: 28px 0;
+        .card-main {
+          .iconDetails {
+            max-width: auto;
+            height: auto;
+            float: unset;
+            width: auto;
+            margin-left: 4px;
+          }
+        }
+      }
+      .free-pack {
+        background-color: #f6f3e7;
+        padding: 6px 14px;
+        margin-bottom: 40px;
+        p {
+          text-align: center;
+          font-size: 22px;
+          letter-spacing: 0px;
+          color: #000000;
+          opacity: 1;
+        }
+        .card {
+          background-color: #fff;
+          border: none;
+          border-radius: 15px;
+          padding: 30px 20px;
+          margin: 20px 0;
+          .card-main {
+            .info-sub {
+              cursor: pointer;
+              text-decoration: underline;
+              text-align: center;
+              text-decoration: underline;
+              font-size: 14px;
+              letter-spacing: 0px;
+              color: #000000;
+              opacity: 1;
+              margin-top: 5px;
+            }
+            .iconDetails {
+              max-width: 100%;
+              height: auto;
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+      .card-wrapper {
+        .varietyPack {
+          margin-left: 40px;
+          display: flex;
+          flex-direction: column;
+          .varietys {
+            cursor: pointer;
+            text-align: left;
+            font-size: 22px;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            margin-bottom: 10px;
+          }
+          .price-of-pack {
+            text-align: left;
+            font-size: 22px;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+          }
+          .bag-size {
+            font-size: 15px;
+            color: #000;
+            text-align: left;
+            opacity: 1;
+          }
+          .changeButton {
+            cursor: pointer;
+            background: #007cbd;
+            color: #fff;
+            text-align: center;
+            padding: 6px 15px 6px 15px;
+            width: 125px;
+            height: 35px;
+            text-decoration: none;
+            display: block;
+            border-radius: 3px;
+            font-size: 16px;
+            margin: 40px 130px 15px 0;
+          }
+          .sample-btn {
+            text-transform: uppercase;
+            width: 130px;
+            height: 35px;
+            font-weight: 700;
+            margin-top: 30px;
+            border-radius: 3px;
+            color: #fff;
+            font-size: 16px;
+            background-color: #000000;
+            border: none;
+            cursor: pointer;
+          }
+          .varietyPack-edit {
+            cursor: pointer;
+            text-align: left;
+            text-decoration: underline;
+            font-size: 16px;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+          }
+        }
+        .closeImg {
+          svg {
+            width: 1em;
+            height: 1em;
+            font-size: 1.5rem;
+            margin-right: 10px;
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
+  .right-grid {
+    .card {
+      .main-wrapper {
+        .left-wrapper {
+          .shopping-cart-subheader {
+            .card-sub-header {
+              margin-bottom: 15px;
+              .notice {
+                text-align: center;
+                font-size: 18px;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+                margin: 0 0 8px 0;
+              }
+            }
+          }
+        }
+        .right-wrapper {
+          .row {
+            display: flex;
+            &::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            .column_text {
+              display: inline-block;
+              font-size: 20px;
+              border-radius: 0;
+              width: 270px;
+              .text {
+                width: 100%;
+                margin: 0;
+                font-size: 16px;
+                padding: 12px;
+                border: 1px solid #c6c4ba;
+              }
+            }
+            .column_btn {
+              display: inline-block;
+              font-size: 20px;
+              border-radius: 0;
+              .button {
+                background: #000000;
+                color: white;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                display: block;
+                border-radius: 3px;
+                font-size: 16px;
+                margin: 0;
+                font-weight: 800;
+                height: 45px;
+              }
+            }
+          }
+          .shopping-cart-items {
+            @media (max-width: 320px) {
+              padding-left: 0px;
+            }
+            .promo-accordion {
+              .shopping-cart-wrapper {
+                padding: 0;
+                height: 30px;
+              }
+            }
+            .accordian-header {
+              text-align: left;
+              font-size: 18px;
+              letter-spacing: 0px;
+              color: #000000;
+              opacity: 1;
+              margin: 0;
+            }
+            li {
+              margin-bottom: 18px;
+            }
+
+            img {
+              float: left;
+              margin-right: 30px;
+            }
+            .item-name {
+              display: block;
+              // padding-top: 10px;
+              // font-size: 16px;
+              top: 159px;
+              left: 1086px;
+              width: 321px;
+              height: 41px;
+              /* UI Properties */
+              font: var(--unnamed-font-style-normal) normal bold
+                var(--unnamed-font-size-16) / 22px
+                var(--unnamed-font-family-work-sans);
+              letter-spacing: var(--unnamed-character-spacing-0);
+              // color: var(--unnamed-color-000000);
+              text-align: left;
+              font: normal normal bold 16px/22px Work Sans;
+              letter-spacing: 0px;
+              color: #000000;
+              opacity: 1;
+              @media (max-width: 320px) {
+                font-size: 13px;
+                width: 250px;
+              }
+            }
+            .item-price {
+              left: 1086px;
+              width: 109px;
+              height: 19px;
+              /* UI Properties */
+              font: var(--unnamed-font-style-normal) normal
+                var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+                22px var(--unnamed-font-family-work-sans);
+              letter-spacing: var(--unnamed-character-spacing-0);
+              // color: var(--unnamed-color-000000);
+              text-align: left;
+              font: normal normal normal 16px/22px Work Sans;
+              letter-spacing: 0px;
+              color: #000000;
+              opacity: 1;
+            }
+          }
+          .card-fotter {
+            margin: 5px 0;
+            .total-sub {
+              text-align: right;
+              font-size: 18px;
+              font-weight: 700;
+              letter-spacing: 0px;
+              color: #1a1a1a;
+              opacity: 1;
+            }
+            span {
+              font-size: 16px;
+              font-weight: 300;
+              letter-spacing: 0px;
+              color: #000000;
+              opacity: 1;
+            }
+            .button {
+              background: #000000;
+              color: white;
+              text-align: center;
+              padding: 12px;
+              text-decoration: none;
+              display: block;
+              border-radius: 3px;
+              font-size: 16px;
+              margin: 25px 0 8px 0;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.Accordion-table-data {
+  .Accordion-firstrow {
+    padding: 20px 15px;
+    .table-data-header {
+      font-family: "work-sans", sans-serif;
+      font-size: 22px;
+      text-align: left;
+      font-weight: bold;
+      margin: 0;
+    }
+    .table-mg-icon {
+      max-width: 100%;
+      height: auto;
+      margin-left: 8px;
+    }
+  }
+}
+.rectangle {
+  background-color: #007cbd;
+  width: 85%;
+  height: 10px;
+  border-radius: 30px;
+}
+//Symmery
+.iconDetails{
+  margin-left:2%;
+  float:left; 
+  height:150.56px;
+  width:150px;
+}
+.varietyPack{
+  float: left;
+  margin-left: 20px;
+  p{
+      font-family: "work-sans", sans-serif !important;
+      font-size: 22px;
+      font-weight: bold;        
+      margin-top: 0px;
+      margin-bottom: 8px;
+  }
+  
+}
+.varietyPack span{
+  float: left;
+  margin-left: 0px;   
+  font-family: "work-sans", sans-serif !important;
+  font-size: 22px; 
+}
+.changeButton{
+  background: #007CBD;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 40px 130px 15px 0;    
+}
+.varietyPack-edit{
+  text-decoration: underline;
+  float: left;
+}
+.closeImg{
+  float: right;
+  cursor: pointer;
+}
+.table{
+  position: relative;
+  top: 0px;
+  // border:1px solid #C6C4BA;
+}
+.Accordion-table-header{    
+  display: inline-block; 
+  border:1px solid #C6C4BA;
+  width: 100%;
+  p{
+      font-family: "work-sans", sans-serif !important;
+      font-size: 14px;
+      font-weight: 21px;        
+      margin-top: 0px;
+      margin-bottom: 8px; 
+  }
+}
+.tableExpandIcon{
+  top: 6px;
+  position: relative;    
+}
+.Accordion-table-data {
+  display: flex;
+  justify-content: space-between;
+  border:1px solid #C6C4BA;
+}
+.Accordion-firstrow {    
+  display: flex;
+  border-right:1px solid #C6C4BA;
+}
+.container3{
+  float: left;
+  margin-left: 20px;
+  p{
+      font-family: "work-sans", sans-serif !important;
+      font-size: 22px;
+      font-weight: bold;        
+      margin-top: 0px;
+  } 
+  span{
+      margin-top: 20px;   
+  }   
+}

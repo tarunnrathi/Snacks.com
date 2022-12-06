@@ -1,0 +1,895 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+
+.header {
+  box-shadow: none !important;
+  background-color: $white;
+  border-bottom: 1px solid #ccc;
+  height: $header-height;
+  z-index: 1301 !important;
+  @media (max-width: 767px) {
+    height: $header-height-mobile;
+  }
+  &-dropdown-list {
+    position: static !important;
+    margin-left: 15px !important;
+  }
+  &.header-popover {
+    z-index: 1 !important;
+  }
+  .head-snacks {
+    width: 100%;
+    height: 100% !important;
+    & > div {
+      padding: 0px;
+      height: 100% !important;
+    }
+    div {
+      // height: 100% !important;
+      .logo-wrapper {
+        height: 100% !important;
+        align-self: center;
+        display: flex;
+      }
+    }
+    nav {
+      height: 100% !important;
+      ul {
+        height: 100% !important;
+      }
+    }
+  }
+
+  .user {
+    &-list {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      position: relative;
+      @media (max-width: 767px) {
+        display: none;
+      }
+      &-wrapper {
+        @media (min-width: 768px) and (max-width: 1200px) {
+          min-width: 140px;
+        }
+        ul {
+          position: absolute;
+          top: 40px;
+          width: 100%;
+          min-width: 140px;
+          padding-top: 0 !important;
+          li {
+            font-weight: 300;
+          }
+          i {
+            margin-right: 12px;
+            min-width: 12px;
+            margin-left: 3px;
+          }
+        }
+        &.open {
+          position: relative;
+          &:before {
+            content: "";
+            box-shadow: 4px 4px 6px $color-box-shadow;
+            border-radius: 17px 6px 6px 6px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            min-width: 140px;
+            background-color: $white;
+          }
+          .user {
+            &-name {
+              color: $theme-blue;
+            }
+            &-icon {
+              border-color: $theme-blue;
+              svg {
+                color: $theme-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-name {
+      margin-left: 5px;
+      color: $black;
+      font-size: 16px;
+      white-space: nowrap;
+      max-width: 110px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-align: left;
+      min-height: 30px;
+      font-weight: 500;
+      @media (max-width: 1023px) {
+        min-height: auto;
+      }
+      @media (max-width: 959px) {
+        font-size: 16px;
+      }
+      @media (max-width: 480px) {
+        max-width: 120px;
+      }
+      @media (max-width: 420px) {
+        max-width: 100px;
+        font-size: 14px;
+      }
+      @media (max-width: 380px) {
+        max-width: 70px;
+      }
+      @media (max-width: 359px) {
+        max-width: 50px;
+      }
+    }
+    &-button {
+      color: #4b4b4b;
+      text-transform: capitalize;
+      min-width: auto;
+      @media (max-width: 420px) {
+        padding-left: 0;
+      }
+    }
+    &-icon {
+      display: flex;
+      border: 1px solid $black;
+      padding: 1px;
+      border-radius: 50%;
+      svg {
+        color: $black;
+      }
+    }
+    &-tr {
+      &-list {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        position: relative;
+        .user-icon {
+          padding: 2px;
+          border: none;
+        }
+        &-wrapper {
+          @media (min-width: 768px) and (max-width: 1200px) {
+            min-width: 140px;
+          }
+          ul {
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            min-width: 140px;
+            padding-top: 0 !important;
+            li {
+              font-weight: 300;
+            }
+            i {
+              margin-right: 12px;
+              min-width: 12px;
+              margin-left: 3px;
+            }
+          }
+          &.open {
+            position: relative;
+            &:before {
+              content: "";
+              background-image: url(/www/images/trProfileTooltip.png);
+              position: absolute;
+              top: 32px;
+              right: 85px;
+              width: 315px;
+              height: 217px;
+              @media (min-width: 1200px) {
+                right: -13px;
+              }
+              @media (max-width: 767px) {
+                right: -14px;
+              }
+            }
+            ul {
+              position: absolute;
+              left: -234px;
+              top: 68px;
+              width: 265px;
+
+              .close-btn {
+                position: absolute;
+                right: -10px;
+                cursor: pointer;
+              }
+              li {
+                padding-left: 10px;
+                padding-right: 10px;
+                i {
+                  margin-left: 0px;
+                }
+              }
+              li:first-of-type {
+                border-bottom: 1px solid $theme-blue;
+                margin-bottom: 5px;
+                margin-top: 20px;
+                cursor: auto;
+
+                &:hover {
+                  background: $white;
+                }
+              }
+              li:not(:first-of-type) {
+                margin-left: 60px;
+                color: $theme-blue;
+                font-weight: 600;
+                font-size: 12px;
+                height: 35px;
+              }
+              li:not(:first-of-type):not(:last-of-type) {
+                border-bottom: 1px solid $theme-blue;
+              }
+              @media (max-width: 599px) {
+                li:not(:first-of-type) {
+                  min-height: unset;
+                }
+              }
+            }
+            .user-profile {
+              display: flex;
+              flex-direction: column;
+              width: 210px;
+              margin-left: 25px;
+              &-name {
+                width: 200px;
+                font-size: 12px;
+                color: $theme-blue;
+                white-space: nowrap;
+                font-weight: 500;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+              &-email {
+                width: 160px;
+                font-size: 11px;
+                font-weight: 300;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & > div {
+    padding: 0;
+    min-height: auto;
+    height: 100%;
+    flex-flow: column;
+    align-items: unset;
+    justify-content: center;
+    @media (max-width: 767px) { 
+      justify-content: flex-start;
+    }
+  }
+  
+  .snacks-header-logo {
+    padding: 0;
+    @media (max-width: 1024px) {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 11px;
+    }
+    @media (max-width: 767px) {
+      top: 7px;
+    }
+    .logo {
+      max-height: 30px;
+      @media (max-width: 767px) {
+        max-width: 92px;
+        max-height: 26px;
+      }
+    }
+    &-tr {
+      @media (max-width: 600px) {
+        margin-top: 0px;
+        top: 122px;
+      }
+    }
+  }
+}
+.header-tr {
+  background-image: unset;
+  background-color: $white;
+  height: 168px;
+  @media (max-width: $mobile-max-width) {
+    padding: 0 0px 0 0;
+  }
+  @media (max-width: 1024px) {
+    height: 140px;
+  }
+  @media (max-width: 600px) {
+    padding: 0 0px 0 0;
+    border-bottom: 5px solid $theme-blue;
+  }
+  .head {
+    &-tasty-rw {
+      width: 100%;
+      height: 80px;
+      box-shadow: 0px 3px 6px #00000029;
+      @media (max-width: 1024px) {
+        height: 68px;
+      }
+      .tasty-right-list {
+        @media (max-width: 1366px) {
+          margin-right: 24px;
+        }
+        @media (max-width: 1024px) {
+          margin-right: 20px;
+        }
+        li {
+          padding: 5px 15px !important;
+          @media (max-width: 1366px) {
+            padding: 5px 22px !important;
+          }
+          @media (max-width: 1024px) {
+            padding: 5px 12px !important;
+          }
+          @media (max-width: 991px) {
+            padding: 5px 10px !important;
+          }
+          @media (max-width: 767px) {
+            padding: 5px 8px !important;
+          }
+        }
+        .user-list-wrapper {
+          li {
+            padding: 15px 6px !important;
+            background-color: #000000;
+          }
+        }
+        .login-ad {
+          .menu-link {
+            color: $theme-blue;
+          }
+        }
+      }
+      .menu-link-wrapper {
+        display: flex;
+        flex-direction: row;
+      }
+      .menu-link {
+        color: #000;
+        font-size: $font16;
+        text-transform: capitalize;
+        min-width: 0;
+        img {
+          vertical-align: middle;
+        }
+        &.lang-link {
+          color: #000;
+          font-size: $font15;
+        }
+        &:hover {
+          color: #000;
+        }
+      }
+      .tr-signin-btn {
+        margin-left: 25px;
+        color: $theme-blue !important;
+        min-width: 100px;
+        text-transform: none;
+        font-weight: bold;
+      }
+      .tr-signup-btn {
+        background-color: $color-red !important;
+        color: $white;
+        padding-left: 25px;
+        padding-right: 25px;
+        min-width: 150px;
+        min-height: 40px;
+
+        &:hover {
+          background-color: $red-b8-hover !important;
+          border-color: $red-b8-hover;
+          color: $white;
+        }
+      }
+      & > div {
+        height: 100%;
+        @media (max-width: 1024px) {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+        @media (max-width: 599px) {
+          padding-left: 5px !important;
+          padding-right: 5px !important;
+        }
+      }
+      .logo {
+        max-height: 64px;
+        max-width: 94px;
+        vertical-align: middle;
+        @media (max-width: 1024px) {
+          max-height: 50px;
+          max-width: 69px;
+        }
+      }
+      .tasty-link {
+        width: 70px !important;
+        display: flex;
+        justify-content: center;
+        a {
+          text-align: center;
+
+          &:hover {
+            color: $tr-hover-red;
+            text-decoration: underline;
+          }
+          .link-text {
+            display: none;
+          }
+          .tasty-icn {
+            &-hover {
+              display: none;
+            }
+          }
+          &:hover,
+          &:focus {
+            .tasty-icn {
+              display: none;
+              &-hover {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      .menu-list-single:not(.tasty-logo):not(.tasty-menu) {
+        @media (max-width: 991px) {
+          display: none;
+        }
+      }
+      .tasty-menu {
+        display: none;
+        @media (max-width: 991px) {
+          display: block;
+        }
+      }
+      .tr-profile-tooltip {
+        position: absolute;
+        background: #efeef0 0% 0% no-repeat padding-box;
+        box-shadow: 0px 2px 3px #00000053;
+        border: 1px solid #cdcbcd;
+        z-index: 1303;
+        top: 40px;
+        left: 15px;
+        width: 172px;
+        .tr-my-account {
+          border-bottom: 1px solid #b4b4b4;
+
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
+        }
+        li {
+          height: 41px;
+          font: normal normal bold 14px/17px $theme-font;
+        }
+      }
+    }
+    &-snacks {
+      .tr-snacks-menu-btn {
+        display: none;
+        text-align: center;
+        min-height: auto !important;
+        @media (max-width: 1024px) {
+          display: flex;
+          color: $black;
+          font-size: $font16;
+          text-transform: uppercase;
+          text-decoration: none;
+          position: relative;
+          letter-spacing: 0.32px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .snackbar-freeShipping-tr {
+    position: relative;
+    top: 0px;
+  }
+}
+
+.menu {
+  &-list {
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &.right-list {
+      margin-left: auto;
+    }
+    &-single {
+      width: auto !important;
+      padding: 10px 15px !important;
+      height: $header-height;
+      @media (max-width: 1200px) {
+        padding: 10px 8px !important;
+      }
+      @media (max-width: 1024px) {
+        padding: 10px 14px !important;
+      }
+      @media (max-width: 991px) {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+      }
+      @media (max-width: 767px) {
+        height: auto;
+      }
+    }
+    .cart {
+      &-list {
+        padding-right: 2px !important;
+        @media (max-width: 767px) {
+          padding-right: 0 !important;
+        }
+        img, svg {
+          max-width: 20px;
+        }
+      }
+      &-count {
+        top: 0;
+        color: $black;
+        left: 12px;
+        height: 18px;
+        min-width: 18px;
+        line-height: 16px;
+        padding: 1px;
+        position: absolute;
+        font-size: 12px;
+        background: $color-yellow;
+        border-radius: 50%;
+        text-align: center;
+        @media (max-width: 767px) {
+          top: -11px;
+        }
+      }
+    }
+    .holiday-list {
+      @media (max-width: 1024px) {
+        display: none;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 12px;
+        .holiday-icn {
+          position: absolute;
+          right: -5px;
+          bottom: -7px;
+        }
+        &.active,
+        &:hover {
+          color: $theme-blue;
+        }
+      }
+    }
+    .login-btn-list {
+      button {
+        @media (max-width: 767px) {
+          font-size: 0.8em !important;
+        }
+      }
+    }
+  }
+  &-link {
+    color: $black !important;
+    padding: 15px 0 !important;
+    min-width: auto !important;
+    letter-spacing: 0.32px !important;
+    @media (max-width: 767px) {
+      padding: 0 !important;
+    }
+    &.no-active {
+      &:after {
+        display: none;
+      }
+    }
+    &:hover, &:focus, &.active {
+      color: $theme-blue !important;
+      background-color: transparent !important;
+      &:after {
+        content: "";
+        height: 4px;
+        width: 100%;
+        background: $theme-blue;
+        left: 50%;
+        bottom: -1px;
+        position: absolute;
+        transform: translate(-50%, 0);
+        pointer-events: none;
+        @media (max-width: 991px) {
+          display: none;
+        }
+      }
+    }
+    &.cart-disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+    &.menu-icon {
+      color: $black;
+      display: none;
+      @media (max-width: 1024px) {
+        display: block;
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+        @media (max-width: 767px) {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      &-close {
+        position: absolute;
+        right: 0;
+        top: 11px;
+        color: $black;
+      }
+    }
+    &.menu-icon-tr {
+      color: $theme-blue !important;
+    }
+    &-web {
+      ul {
+        @media (max-width: 959px) {
+          justify-content: flex-end;
+        }
+      }
+    }
+    &-wrapper {
+      display: flex;
+    }
+  }
+}
+
+// drawer start
+.drawer {
+  &-wrapper {
+    @media (max-width: 1024px) {
+      z-index: 1303 !important;
+    }
+  }
+
+  &-tr-mobile {
+    background-color: $white;
+    @media (max-width: 991px) {
+      width: 100%;
+      padding-top: 0;
+      box-shadow: none !important;
+    }
+    @media (max-width: 420px) {
+      min-height: 100vh;
+    }
+    .menu {
+      &-link {
+        color: $black;
+        &.no-active {
+          color: $black !important;
+          &:hover {
+            color: $black !important;
+          }
+        }
+        &-wrapper {
+          flex-flow: column;
+          @media (max-width: $mobile-max-width) {
+            padding: 0 !important;
+          }
+          @media (max-width: 991px) {
+            padding-top: 70px !important;
+            padding-bottom: 15px !important;
+          }
+        }
+        .menu-icon-close {
+          color: $theme-blue !important;
+        }
+      }
+    }
+    .menu-list-single {
+      @media (max-width: 1024px) {
+        padding: 0 !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        width: 100% !important;
+        a {
+          padding: 10px 24px;
+          display: block;
+          width: 100%;
+          @media (max-width: 767px) {
+            padding: 13px 24px;
+          }
+        }
+        .tasty-icn,
+        .tasty-icn-hover {
+          display: none;
+        }
+      }
+      @media (max-width: 991px) {
+        text-align: center;
+        justify-content: center;
+        border-bottom: none;
+      }
+      &.holiday-list {
+        a {
+          @media (max-width: 1024px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 9px 24px;
+          }
+          svg {
+            path {
+              fill: $theme-blue;
+            }
+          }
+        }
+      }
+      .logout {
+        margin-top: 10px;
+        color: $theme-blue !important;
+      }
+
+      &.guest-btns {
+        margin-top: 10px;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          padding-left: 0;
+          padding-top: 5px;
+          padding-bottom: 15px;
+          li {
+            border-bottom: none;
+            &:first-child {
+              margin-bottom: 10px;
+            }
+            .menu-link {
+              font-size: 1em;
+            }
+          }
+        }
+        .tr-signup-btn {
+          background-color: $color-red !important;
+          color: $white;
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+      }
+      &.tasty-logo {
+        @media (max-width: 991px) {
+          position: absolute;
+          left: 13px;
+          top: 7px;
+          width: auto !important;
+          border: none;
+          a {
+            padding: 0;
+          }
+        }
+        img {
+          @media (max-width: 991px) {
+            max-width: 69px;
+          }
+        }
+      }
+      .lang-link {
+        padding-bottom: 0;
+        line-height: 20px;
+        color: #000;
+        font-size: $font14;
+      }
+    }
+    .login-list {
+      padding: 15px 40px 15px 0px !important;
+      min-height: 70px;
+    }
+    .user-icon {
+      display: flex;
+      margin-right: 5px;
+      @media (max-width: 1024px) {
+        color: $black;
+      }
+    }
+    .user-button {
+      text-transform: capitalize;
+      justify-content: flex-start;
+      padding-left: 20px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 1em;
+    }
+    .user-name {
+      @media (max-width: 1024px) {
+        color: $black;
+      }
+    }
+  }
+}
+// drawer end
+
+// .reg-options {
+//   position: relative;
+//   button {
+//     min-width: auto;
+//     color: $black;
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+//   ul {
+//     position: absolute;
+//     top: 40px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     @include boxShadowContainer;
+//     padding: 2px;
+//     background: $white;
+//     background-image: linear-gradient(to right, #f7d43e, #f3a820);
+//     @media (max-width: 1366px) {
+//       transform: translateX(0);
+//       left: auto;
+//       right: -15px;
+//     }
+//     @media (max-width: 1024px) {
+//       transform: none;
+//       left: auto;
+//       right: 0;
+//     }
+//     &:before {
+//       content: "";
+//       position: absolute;
+//       width: 10px;
+//       height: 10px;
+//       transform: translateX(-50%) rotate(45deg);
+//       background-image: linear-gradient(to right, #f7d43e, #f3a820);
+//       top: -6px;
+//       left: 50%;
+//       @media (max-width: 1366px) {
+//         left: auto;
+//         right: 18px;
+//       }
+//       @media (max-width: 1024px) {
+//         transform: translateX(0) rotate(45deg);
+//       }
+//     }
+//     li {
+//       font-size: 15px;
+//       padding-left: 10px;
+//       padding-right: 10px;
+//       @media (max-width: 599px) {
+//         padding-left: 5px;
+//         padding-right: 5px;
+//         font-size: 13px;
+//         min-height: auto;
+//       }
+//       span {
+//         display: flex;
+//         margin-right: 2px;
+//         svg {
+//           @media (max-width: 599px) {
+//             font-size: 1.3rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+.tr-link-item {
+  text-transform: none !important;
+}

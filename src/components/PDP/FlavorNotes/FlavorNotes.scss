@@ -1,0 +1,86 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+
+.container-root {
+  @media (min-width: 992px) {
+    max-width: 1440px !important;
+  }
+}
+
+.flavor-notes-container {
+  background: url("/www/images/redesign/flavor-notes-bg-desktop.png") no-repeat;
+  background-size: cover;
+  padding: 95px 150px 80px;
+
+  .left-cont {
+    h2 {
+      font-size: 50px;
+      line-height: 50px;
+      font-weight: 900;
+      font-family: $theme-font !important;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      margin: 0;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      h2 {
+        font-size: 36px;
+        line-height: 36px;
+      }
+    }
+  }
+
+  .right-cont {
+    padding-left: 147px;
+
+    h4 {
+      font-size: 18px;
+      line-height: 12px;
+      font-weight: bold;
+      font-family: $theme-font !important;
+      margin: 10px auto 20px;
+    }
+
+    .icons-wrapper {
+      display: flex;
+
+      > div {
+        display: grid;
+        margin-right: 30px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
+        span {
+          text-align: center;
+        }
+      }
+    }
+
+    @media (max-width: $mobile-max-width) {
+      padding-left: 0;
+
+      h4 {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    background: url("/www/images/redesign/flavor-notes-bg-mobile.png") no-repeat;
+    background-size: cover;
+    padding: 43px 15px 34px;
+    display: block !important;
+  }
+}

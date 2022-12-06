@@ -1,0 +1,110 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+.menu {
+  &-mega {
+    position: static !important;
+    &-container {
+      position: absolute;
+      // min-height: 300px;
+      // height: 100vh;
+      // background: rgba(0,0,0,0.2);
+      top: 32px;
+      left: 50%;
+      overflow: hidden;
+      transform: translate(-50%, 22px);
+      transition: all 0.3s ease;
+      flex-flow: column;
+      .container-root {
+        margin-bottom: 30px;
+      }
+      &-inner {
+        width: 100%;
+        padding-top: 30px;
+        background: #fff;
+        border-bottom: 1px solid #CDCDCD;
+        .filter-container {
+          justify-content: space-between;
+          &-list {
+            flex: 1;
+          }
+        }
+      }
+    }
+    &-title {
+      font-size: $font16;
+      font-weight: 700;
+      text-transform: uppercase;
+      .parent-menu-link {
+        text-decoration: none;
+        color: #343434;
+      }
+    }
+    &-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      padding-top: 10px;
+      flex-flow: column;
+      &.brand {
+        flex-flow: row;
+        padding-top: 35px;
+        flex-wrap: wrap;
+        li {
+          width: 16.666667%;
+          margin-bottom: 30px;
+          text-align: center;
+          button {
+            width: 100%;
+          }
+        }
+      }
+      &.columns {
+        flex-flow: wrap;
+        align-items: flex-start;
+        height: 300px;
+        justify-content: flex-start;
+        flex-direction: column;
+        li {
+          width: 300px;
+        }
+      }
+      li {
+        button {
+          padding: 0;
+          min-width: auto;
+          text-transform: capitalize;
+          font-weight: 400;
+          &:focus, &:hover {
+            background-color: rgba(0,0,0,0.1);
+          }
+          img {
+            max-height: 94px;
+            max-width: 130px;
+          }
+          span {
+            flex-wrap: wrap;
+          }
+          div {
+            width: 100%;
+            margin-top: 5px;
+            word-break: break-word;
+          }
+        }
+      }
+    }
+    &-footer {
+      border-top: 1px solid #CDCDCD;
+      text-align: center;
+      width: 100%;
+      a, button {
+        text-transform: uppercase;
+        color: #343434;
+        font-size: $font16;
+        text-decoration: none;
+        font-weight: 800;
+        display: inline-block;
+        padding: 12px 5px;
+      }
+    }
+  }
+}

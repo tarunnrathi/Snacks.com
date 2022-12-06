@@ -1,0 +1,16 @@
+@import "../../styles/commonStyle/commonStyle.scss";
+
+.common-box {
+  padding: 50px 0;
+  .common-box-header {
+    background-color:$theme-blue;
+    color: #fff;
+    h1 {
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+}
+.common-box button.btn-blue {
+  @include standardLinkNew($blue-dark, $white);
+}

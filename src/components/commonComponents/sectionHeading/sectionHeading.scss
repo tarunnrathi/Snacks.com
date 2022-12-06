@@ -1,0 +1,65 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+.heading {
+  display: block;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  @media (max-width: 767px) {
+    display: flex;
+  }
+  .main-heading {
+    margin: 1rem 3rem 1rem 0;
+    font-size: $font26;
+    //font-weight: 600;
+    line-height: $font30;
+    letter-spacing: -0.29px;
+    color: $theme-blue;
+    display: inline-block;
+    @media (max-width: 767px) {
+      margin: 1rem 1rem 1rem 0;
+      font-size: $font20;
+      line-height: $font30;
+    }
+  }
+  .sub-heading {
+    margin: 1rem 3rem 1rem 0;
+    font-size: $font18;
+    font-weight: 500;
+    line-height: $font24;
+    @media (max-width: 767px) {
+      margin: 1rem 0;
+    }
+  }
+
+  .show-all {
+    color: $theme-blue;
+    margin: 1.2rem 0 1rem 0;
+    font-size: $font20;
+    font-weight: 500;
+    line-height: $font30;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: capitalize;
+    &:hover {
+      background: none;
+    }
+    @media (max-width: 767px) {
+      font-size: $font16;
+      line-height: $font20;
+      margin: 1rem;
+    }
+    text-decoration: none;
+    &.align-right {
+      float: right;
+      @media (max-width: 767px) {
+        float: none;
+      }
+    }
+    &.align-left {
+      float: left;
+      @media (max-width: 767px) {
+        float: none;
+      }
+    }
+  }
+}

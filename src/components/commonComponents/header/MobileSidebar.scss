@@ -1,0 +1,174 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+.menu {
+  &-mobile {
+    &-popoverPaper {
+      width: 100%;
+      max-width: 100% !important;
+      height: 100%;
+      left: 0 !important;
+      right: 0 !important;
+      border-radius: 0px !important;
+      max-height: calc(100% - 82px) !important;
+      @media (max-width: 1024px) {
+        top: $main-content-pos !important;
+      }
+      @media (max-width: 767px) {
+        top: $main-content-pos-mobile !important;
+      }
+      .list {
+        &-container {
+          flex-flow: column;
+          height: 100%;
+        }
+        &-subheader {
+          font-weight: 800;
+          color: #000000;
+          font-size: 16px;
+          & > span {
+            font-weight: 600;
+            color: #000000;
+          }
+          &-item {
+            &-text {
+              cursor: pointer;
+              span {
+                font-family: $theme-font;
+                font-weight: 800;
+              }
+            }
+          }
+        }
+        &-submenu {
+          display: flex;
+          flex-wrap: wrap;
+          padding-bottom: 140px;
+          &-title {
+            font-weight: 800;
+            font-size: 16px;
+            padding-left: 16px;
+            width: 100%;
+            padding-top: 32px;
+            padding-bottom: 16px;
+            &.footer-title {
+              padding-top: 10px;
+              button {
+                padding: 0;
+                font-weight: 800;
+                font-size: 16px;
+              }
+            }
+          }
+          &-header {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px !important;
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            .item-text {
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%);
+              > span {
+                font-size: 16px;
+                font-weight: 800;
+                color: $black;
+                font-family: $theme-font;
+              }
+            }
+          }
+          &-item {
+            padding-left: 30px !important;
+            button {
+              min-width: auto;
+              padding: 0;
+              text-transform: capitalize;
+              text-align: left;
+              font-weight: 400;
+              span {
+                display: flex;
+                flex-wrap: wrap;
+              }
+              img {
+                max-width: 100%;
+                max-height: 85px;
+              }
+              div {
+                width: 100%;
+              }
+            }
+          }
+          .leftArrow {
+            justify-content: flex-start;
+            color: $black;
+          }
+          &.brands {
+            li {
+              justify-content: center;
+              width: 25%;
+              align-items: flex-start;
+              @media (max-width: 767px) {
+                width: 50%;
+                padding: 8px 20px !important;
+              }
+              button {
+                text-align: center;
+                div {
+                  margin-top: 5px;
+                  word-break: break-word;
+                }
+              }
+            }
+          }
+        }
+        &-level-1 {
+          flex: 1;
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
+
+      }
+      .rightArrow {
+        justify-content: flex-end;
+        color: $black;
+      }
+      .login-grid {
+        background-color: #EDEDED;
+        padding-top: 10px;
+        li {
+          font-size: 16px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
+      }
+      .links {
+        text-decoration: none;
+        color: $black;
+        font-weight: 600;
+      }
+      .user-icon {
+        display: flex;
+        margin-right: 5px;
+        @media (max-width: 1024px) {
+          color: $black;
+        }
+      }
+      .user-button {
+        text-transform: capitalize;
+        justify-content: flex-start;
+        padding-left: 5px; // 16px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 1em;
+      }
+      .user-name {
+        @media (max-width: 1024px) {
+          color: $black;
+        }
+      }
+    }
+    &-popoverPaper-tr {
+      top: 172px !important;
+    }
+  }
+}

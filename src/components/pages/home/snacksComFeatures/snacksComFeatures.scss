@@ -1,0 +1,114 @@
+@import "../../../../styles/commonStyle/commonStyle.scss";
+
+.aboutSnacksContainer {
+  display: flex;
+  justify-content: center;
+
+  .aboutSnacks {
+    background-color: $beige;
+    max-width: 1440px;
+    align-self: center;
+    padding: 62px 70px 57px 70px;
+    @media (max-width: $mobile-max-width) {
+      padding: 40px 24px 40px 24px;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 80px;
+      padding-right: 20px;
+      @media (max-width: $mobile-max-width) {
+        padding: 0px;
+        margin-bottom: 40px;
+        flex-basis: 100%;
+      }
+      h6 {
+        font-size: 70px;
+        font-weight: 900;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        line-height: 70px;
+        color: $black;
+        text-align: left;
+        @media (max-width: $mobile-max-width) {
+          font-size: 36px;
+          font-weight: 900;
+          line-height: 36px;
+          margin-top: 0px;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+        .desktopOnly {
+          @media (max-width: $mobile-max-width) {
+            display: none;
+          }
+        }
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $black;
+        text-align: left;
+        max-width: 495px;
+        margin: 0px;
+        @media (max-width: $mobile-max-width) {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: center;
+          align-self: center;
+        }
+      }
+    }
+    .right {
+      @media (max-width: $mobile-max-width) {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+      }
+
+      .mb-30 {
+        margin-bottom: 30px;
+      }
+
+      &-item {
+        display: flex;
+        @media (max-width: $mobile-max-width) {
+          max-width: 495px;
+        }
+        img {
+          height: 50px;
+          width: 50px;
+          object-fit: contain;
+          margin-right: 57px;
+          @media (max-width: $mobile-max-width) {
+            margin-right: 28px;
+          }
+        }
+        span {
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 24px;
+          color: $black;
+          margin: 0 0 10px 0;
+          @media (max-width: $mobile-max-width) {
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 24px;
+          }
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: $black;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}

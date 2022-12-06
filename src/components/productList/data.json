@@ -1,0 +1,16 @@
+{
+    "crumbs": [
+        {
+          "label": "Home",
+          "link": "/"
+        },
+        {
+            "label": "All Snacks"
+        }
+    ],
+    "banner": {
+        "heading": "Chips",
+        "description": "Crunch, crunch, crunch away with a wide variety of chip options. Have it hot, zesty, or cheesy –– flavor is calling and we think you should answer.",
+        "items": ["Cheetos", "Doritos", "Ruffles", "Lay’s", "Fritos", "Baked", "Bare", "Munchos", "Popcorners", "Stacy’s"]
+    }
+}

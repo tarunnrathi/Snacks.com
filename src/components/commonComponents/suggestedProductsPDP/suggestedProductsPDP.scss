@@ -1,0 +1,88 @@
+@import "../../../styles/commonStyle/commonStyle.scss";
+
+.suggestions-heading {
+  text-align: center;
+  text-transform: unset;
+  font-family: $theme-font !important;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  margin-top: 80px;
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.suggested-carousel {
+  // slider start
+  .slick {
+    &-slider {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 30px;
+
+      @media (max-width: 1024px) {
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 40px;
+      }
+
+      .slick {
+        &-arrow {
+          top: 45%;
+        }
+
+        &-prev,
+        &-next {
+          display: none !important;
+        }
+      }
+    }
+
+    &-slide:last-of-type {
+      padding-right: 3px;
+    }
+
+    @media (max-width: 1024px) and (min-width: 381px) {
+      &-slide:nth-child(even) {
+        padding-right: 1px;
+      }
+    }
+
+    &-dots {
+      bottom: 8px;
+
+      li {
+        width: auto;
+        height: auto;
+
+        button {
+          background-color: transparent;
+          border-radius: 50%;
+          border: 1px solid $black;
+          height: 13px;
+          width: 13px;
+          padding: 4px;
+
+          @media (max-width: 767px) {
+            height: 7px;
+            width: 7px;
+          }
+
+          &:before {
+            display: none;
+          }
+        }
+
+        &.slick-active {
+          button {
+            background-color: $black;
+          }
+        }
+      }
+    }
+  }
+}

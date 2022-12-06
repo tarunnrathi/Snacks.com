@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="26.91" viewBox="0 0 78 26.91">
+  <g id="Group_20800" data-name="Group 20800" transform="translate(-296.536 -35.202)">
+    <g id="Group_1106" data-name="Group 1106" transform="translate(324.813 35.202)" opacity="0.15">
+      <path id="Path_999" data-name="Path 999" d="M173.286,82.572A5.286,5.286,0,1,0,168,77.286,5.292,5.292,0,0,0,173.286,82.572Zm-1.012-6.35,1.012-2.05,1.012,2.05,2.262.329-1.637,1.6.386,2.253-2.024-1.064L171.262,80.4l.387-2.253-1.637-1.6Z" transform="translate(-161.753 -69.597)" fill="#1e5aa5"/>
+      <path id="Path_1000" data-name="Path 1000" d="M75.533,257.2a8.63,8.63,0,0,1-6.542-2.991L64,262.967h5.766l2.883,4.805,2.883-6.355,2.021-4.454A8.668,8.668,0,0,1,75.533,257.2Z" transform="translate(-64 -240.863)" fill="#1e5aa5"/>
+      <path id="Path_1001" data-name="Path 1001" d="M135.688,47.377A7.688,7.688,0,1,0,128,39.688,7.689,7.689,0,0,0,135.688,47.377Zm0-13.455a5.766,5.766,0,1,1-5.766,5.766A5.766,5.766,0,0,1,135.688,33.922Z" transform="translate(-124.156 -32)" fill="#1e5aa5"/>
+      <path id="Path_1002" data-name="Path 1002" d="M270.167,254.211A8.671,8.671,0,0,1,266.8,256.6l-2.688,5.892,2.4,5.281,2.883-4.805h5.766Z" transform="translate(-252.093 -240.864)" fill="#1e5aa5"/>
+    </g>
+    <text id="Sweepstakes" transform="translate(335.536 51.5)" fill="#1e5aa5" font-size="12" font-family="Gotham, sans-serif" font-weight="700"><tspan x="-38" y="0">Sweepstakes</tspan></text>
+  </g>
+</svg>

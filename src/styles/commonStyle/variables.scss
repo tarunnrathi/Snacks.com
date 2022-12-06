@@ -1,0 +1,84 @@
+/** color base **/
+$color-disable: #dddddd;
+$color-yellow: #fdc424;
+$color-yellow-hover: #e2b502;
+$color-grey-dark: #4b4b4b;
+$color-red: #d92736;
+$color-blue:#007CBD;
+
+$mobile-max-width: 991px;
+
+$color-dark-orange: #c04319;
+$color-box-shadow: #00000029;
+
+$theme-font: "work-sans", sans-serif;
+$header-height: 54px;
+$header-height-mobile: 86px;
+$theme-container: 1440px;
+$header-banner-height: 28px;
+$header-banner-height-mobile: 22px;
+$main-content-pos: 82px;
+$main-content-pos-mobile: 108px;
+$main-content-pos-error: 102px;
+$main-content-pos-error-mobile: 126px;
+
+/** Font base **/
+$font10: 0.625em; //10px
+$font12: 0.75em; //12px
+$font14: 0.875em; //14px
+$font15: 0.938em; //14px
+$font16: 1em; //16px
+$font17: 1.063em; //17px
+$font18: 1.125em; //18px
+$font20: 1.25em; //20px
+$font22: 1.375em; //22px
+$font24: 1.5em; //24px
+$font26: 1.529em; //26px
+$font28: 1.75em; //28px
+$font30: 1.875em; //30px
+$font32: 2em; //32px
+$font34: 2.125em; //34px
+$font36: 2.25em; //36px
+$font42: 2.625em; //42px
+$font45: 2.813em; //45px
+$font48: 3em; //48px
+$font52: 3.25em; //52px
+$font55: 3.438em; //55px
+$font60: 3.75em; //60px
+$font64: 4em; //60px
+$font70: 4.375em; //70px
+$font80: 5em; //80px
+$font90: 5.625em; //90px
+
+/** color base new **/
+$white: #fff;
+$black: #000;
+$black-light: #343434;
+$black-medium: #1a1a1a;
+$yellow: #fdc424;
+$yellow-dark: #fecc04;
+$blue-light: #0289ba;
+$blue-dark: #00527c;
+$orange-light: #fda428;
+$orange: #bd390d;
+$orange-dark: #ba3002;
+$grey: #e8e8e8;
+$grey-light: #f2f2f2;
+$grey-medium: #5f4f3d7f;
+
+$tr-hover-red: #dd2f3d;
+
+$red-db: #db1d2d;
+$red-b8-hover: #b81321;
+$white-fc: #fcfcfc;
+
+$scroll-bar: $black-light;
+
+/**** Redesign ****/
+/** color base **/
+$gray-border: #C6C4BA;
+$gray-border-active: #676767;
+$star-filled: #F73600;
+$gray-595: #595959;
+$theme-blue: #127CBD;
+$beige: #F6F3E7

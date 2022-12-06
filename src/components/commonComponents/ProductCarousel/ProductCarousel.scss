@@ -1,0 +1,62 @@
+@import "./../../../styles/commonStyle/commonStyle.scss";
+
+.product-thumbnail {
+    background-color: $white;
+    border: 1px solid $gray-border;
+    margin-bottom: 14px;
+    width: 85px;
+    height: 85px;
+
+    &.active {
+        border: 1px solid $gray-border-active !important;
+    }
+
+    .image-gallery-thumbnail-image {
+        width: 100%;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      margin-left: 15px !important;
+        &:first-child {
+          margin-left: 0 !important;
+        }
+    }
+}
+
+.bullet {
+    background: $black !important;
+    border: $black !important;
+    box-shadow: none !important;
+    padding: 5px !important;
+
+    &.active {
+        background: $white !important;
+        border: 3px solid $black !important;
+        padding: 3px !important;
+        transform: none !important;
+    }
+}
+
+.image-gallery-bullets {
+    position: initial;
+    margin-top: 20px;
+}
+
+.image-gallery-thumbnails-wrapper {
+    &.bottom {
+        margin-top: 20px;
+        margin-bottom: 6px;
+    }
+}
+
+.image-gallery-video {
+  height: 556px;
+
+  video {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    height: 305px;
+  }
+}
